@@ -11,8 +11,7 @@ int main() {
 	{cont++;
 	n=n/10;}
 	while(temp!=0)
-	{
-		int rem = temp%10;
+	{	int rem = temp%10;
 		sum = sum + pow(rem,cont);
 		temp=temp/10;
 	}
