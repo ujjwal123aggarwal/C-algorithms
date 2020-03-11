@@ -15,6 +15,5 @@ int main() {
 			if((a[j]+a[i])==target)
 			cout<<min(a[i],a[j])<<" and "<<max(a[j],a[i])<<endl;
 		}
-	}
-	return 0;
+	}return 0;
 }
