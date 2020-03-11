@@ -20,6 +20,5 @@ int main() {
 		sum = sum/2;
 	}
 	cout<<sum2;
-
 	return 0;
 }
