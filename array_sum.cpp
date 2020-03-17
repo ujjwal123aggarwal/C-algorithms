@@ -30,7 +30,5 @@ int main() {
 	for(int j=0;j<=max(n,m);j++)
 	cout<<sum[j];
 
-
-
 	return 0;
 }
