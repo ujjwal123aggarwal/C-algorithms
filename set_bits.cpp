@@ -8,8 +8,7 @@ int main() {
 	{
 		cin>>a;
 		while(a!=0)
-		{
-			int rem=a%2;
+		{	int rem=a%2;
 			if(rem==1)
 			count++;
 			a=a/2;
