@@ -17,7 +17,7 @@ char maxchar(string a)
 	{
 		if(count[m]>great)
 		{ great = count[m];
-			index = m;
+		index = m;
 		}
 	}
 	return index;
