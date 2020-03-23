@@ -20,6 +20,7 @@ string dublicate(string s)
 				s[j] = s[j+1];
 			}s[l-1]='\0';
 			l=l-1;
+			i--; //bcoz when it comes out of j loop, ith position should again be checked
 
 		}
 	}return s;

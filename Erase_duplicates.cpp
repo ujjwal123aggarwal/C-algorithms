@@ -3,22 +3,25 @@ using namespace std;
 
 void duplicate(int *a,int n)
 {
-	if(n==0)
+	for(int m=0;m<n-1;m++)
 	{
-	return;
-	}
-
-	int key = a[0];
-	for(int i=1;i<n;i++)
-	{
-		if(a[i]==key)
+		int key = a[m];
+		for(int i=m+1;i<n;i++)
 		{
-			for(int j=i+1;j<n;j++)
-			a[j-1]=a[j];
-			n--;
+			if(a[i]==key)
+			{
+				if(i==(n-1))
+				n--;
+				else
+				{
+					for(int j=i+1;j<n;j++)
+					a[j-1]=a[j];
+					n--;
+				}	i--;   //bcoz when it comes out of j loop, ith position should again be checked
+			}
+
 		}
 	}
-	duplicate(a+1,n-1);
 	for(int i=0;i<n;i++)
 	cout<<*(a+i)<<" ";
 }
