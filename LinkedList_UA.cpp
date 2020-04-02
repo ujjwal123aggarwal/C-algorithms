@@ -165,7 +165,7 @@ void printll(node* head)
     }cout<<"NULL"<<endl;
 }
 
-int main()
+/*int main()
 {
     node *head = NULL;
     node *tail = NULL;
@@ -187,3 +187,4 @@ int main()
 
 
 }
+*/
