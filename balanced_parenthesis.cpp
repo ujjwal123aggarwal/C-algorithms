@@ -43,7 +43,7 @@ bool parenthesis(string s)
 
 
     }
-return s.empty() == true?true:false;
+return a.empty() ;
 
 
 }
@@ -51,11 +51,11 @@ return s.empty() == true?true:false;
 
 int main()
 {
-    string s = "({)";
-   // getline(cin,s);
+    string s ;
+    getline(cin,s);
     bool result = parenthesis(s);
-    cout<<boolalpha;
-    cout<<result;
+    if(result) cout<<"Yes";
+	else cout<<"No";
 
 
 
