@@ -23,8 +23,24 @@ public:
     return v.size()==0;
 
     }
-};
 
+    int sizes(){
+    return v.size();
+    }
+
+t findmid(stack<char> s)
+{
+        return v[v.size()/2];
+}
+};
+void printstack(stack<char> s)
+{
+    while(!s.empty())
+    {
+        cout<<s.top()<<" ";
+        s.pop();
+    }cout<<endl;
+}
 
 int main()
 {
@@ -34,11 +50,10 @@ int main()
     s.push('c');
     s.push('d');
     s.push('h');
+s.push('p');
+    printstack(s);
+    char mid = s.findmid(s);
 
-    while(!s.empty())
-    {
-        cout<<s.top()<<endl;
-        s.pop();
-    }
+    cout<<"mid: "<<mid<<endl;
     return 0;
 }
